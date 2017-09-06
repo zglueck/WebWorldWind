@@ -27,7 +27,8 @@
     "build": "grunt",
     "test": "grunt karma",
     "doc": "grunt jsdoc",
-    "test:watch": "karma start karma.conf.js"
+    "test:watch": "karma start karma.conf.js",
+    "postinstall": "grunt"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
