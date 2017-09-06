@@ -28,7 +28,7 @@
     "test": "grunt karma",
     "doc": "grunt jsdoc",
     "test:watch": "karma start karma.conf.js",
-    "postinstall": "grunt"
+    "postinstall": "npm install && grunt"
   },
   "dependencies": {
     "grunt": "^1.0.1",
