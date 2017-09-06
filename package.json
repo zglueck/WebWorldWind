@@ -61,7 +61,6 @@
     "browser"
   ],
   "dependencies": {
-    "node-requirejs": "^0.1.1",
     "requirejs": "^2.3.5"
   }
 }
