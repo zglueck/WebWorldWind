@@ -28,8 +28,7 @@
     "test": "grunt karma",
     "doc": "grunt jsdoc",
     "bundle": "grunt requirejs",
-    "test:watch": "karma start karma.conf.js"//,
-    //"postinstall": "postinstall-build worldwind.js --script=bundle --only-as-dependency"
+    "test:watch": "karma start karma.conf.js"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
