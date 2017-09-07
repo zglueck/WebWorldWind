@@ -1,15 +1,13 @@
 var requirejs = require('requirejs');
 
+var path = require('path');
+var requirejs = require('requirejs');
+
 requirejs.config({
-        baseUrl: 'src',
-        name: '../tools/almond',
-        include: ['WorldWind'],
-        optimize: 'none',
-        out: 'worldwind.js',
-        wrap: {
-            startFile: 'tools/wrap.start',
-            endFile: 'tools/wrap.end'
-        }
+        paths : {
+            'WorldWind' : path.join(__dirname, 'src')
+        },
+        nodeRequire : require
     });
 
-module.exports = requirejs('WorldWind');
+module.exports = requirejs('WorldWind/WorldWind');
