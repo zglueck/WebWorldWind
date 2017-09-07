@@ -2,7 +2,7 @@
   "name": "@nasaworldwind/worldwind",
   "version": "0.0.1",
   "description": "Web WorldWind",
-  "main": "index.js",
+  "main": "worldwind.js",
   "homepage": "https://nasaworldwind.github.io/",
   "bugs": {
     "url": "https://github.com/NASAWorldWind/WebWorldWind/issues"
@@ -27,7 +27,8 @@
     "build": "grunt",
     "test": "grunt karma",
     "doc": "grunt jsdoc",
-    "test:watch": "karma start karma.conf.js"
+    "test:watch": "karma start karma.conf.js",
+    "postinstall": "postinstall-build worldwind.js \"npm run build\""
   },
   "devDependencies": {
     "grunt": "^1.0.1",
@@ -61,6 +62,6 @@
     "browser"
   ],
   "dependencies": {
-    "requirejs": "^2.3.5"
+    "postinstall-build": "^5.0.1"
   }
 }
